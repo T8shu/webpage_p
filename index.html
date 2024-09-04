@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <style>
+    /* styles.css */
+        /* Global styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgba(255, 255, 255, 0.774);    
+        }
+        
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            color: #fff; 
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        
+        nav ul li a {
+            color: #fffffff1;
+            text-decoration: overline;
+        }
+        
+        .hero {
+            background-color: hsla(300, 44%, 38%, 0.377);
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            border-image:black;
+            image-rendering:initial;
+            
+        }
+        
+        .card {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 30%;
+            max-width: 30%;
+            
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        /* Buttons */
+        button, .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: black;
+            background-color: blanchedalmond;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover, .btn:hover {
+            background-color: #bc0fdf; /* Darker color on hover */
+        }
+        
+        
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .card {
+                max-width: 80%;
+                image-resolution: 100;
+            }
+        }
+        /* Adjustments for mobile devices */
+        @media (max-width: 767px) {
+            /* Stack navigation menu for mobile */
+            nav {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+          }
+          button, .btn {
+            width: 100%;
+        }
+        </style>
+</head>
+<body>
+    <header> 
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero"> 
+            <button class="button">Click Me</button>  
+
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Speedy Food Delivery Service in Town</h1>
+                    <p>We take pride in our efficient food delivery service, and we've optimized our operations to ensure your food reaches you promptly, piping hot and ready to be enjoyed.</p>
+
+        <section class="content">
+            <div class="card">
+                <h2>Home</h2>
+                <img src= "desserts.jpg" alt="foodimg" height="400" width="350">
+                <p><a href="home.html">Click Here</a> for more</p>
+            </div>
+            <div class="card">
+                <h2>Our Services </h2>
+                <img src="service.jfif" alt="foodimg" height="400" width="350">    
+                <p><a href="Services.html">Click Here</a> To know about the services we provide</p>
+            </div>
+            <div class="card">
+                <h2>About Us</h2>
+                <img src="web5 - Copy.jpg" alt="foodimg" height="400" width="350">
+                <p><a href="about.html">Click Here </a> To know more about us.</p>
+            </div>
+            <div class="card">
+                <h2>Contact</h2>
+                <img src= "web3.jfif" alt="foodimg" height="400" width="350">
+                <p><a href="contact.html">Click Here</a> To contact with us.</p>
+            </div>
+           
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Food Delivery Webpage.</p>
+    </footer>
+</body>
+</html>
